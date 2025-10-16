@@ -18,9 +18,9 @@ Website ini telah di-hosting menggunakan GitHub Pages dan dapat diakses melalui 
 
 ## Teknologi yang Digunakan
 
-* [cite_start]**HTML5:** Untuk membangun struktur dan kerangka utama halaman web[cite: 19].
-* [cite_start]**CSS3:** Untuk mendesain, menata letak, dan menambahkan animasi untuk mempercantik tampilan website[cite: 23, 33].
-* [cite_start]**JavaScript:** Untuk fungsionalitas dan interaktivitas, seperti event handling dan manipulasi DOM[cite: 13, 26].
+* **HTML5:** Untuk membangun struktur dan kerangka utama halaman web.
+* **CSS3:** Untuk mendesain, menata letak, dan menambahkan animasi untuk mempercantik tampilan website.
+* **JavaScript:** Untuk fungsionalitas dan interaktivitas, seperti event handling dan manipulasi DOM
 
 ---
 
@@ -28,47 +28,47 @@ Website ini telah di-hosting menggunakan GitHub Pages dan dapat diakses melalui 
 
 Berikut adalah penjelasan implementasi kode pada proyek yang disesuaikan dengan kriteria penilaian pada dokumen `UTS Pemweb.pdf`.
 
-### [cite_start]1. Struktur HTML [cite: 39]
+### 1. Struktur HTML
 
 File `tugas web.html` diorganisir menggunakan tag HTML semantik untuk meningkatkan aksesibilitas dan struktur yang jelas.
 
-* [cite_start]**`<header>`:** Berisi elemen navigasi utama (`<nav>`) yang mencakup logo dan tautan ke bagian-bagian halaman[cite: 20].
+* **`<header>`:** Berisi elemen navigasi utama (`<nav>`) yang mencakup logo dan tautan ke bagian-bagian halaman.
 * **`<main>`:** Membungkus seluruh konten utama halaman, yang dibagi lagi ke dalam beberapa bagian.
 * **`<section>`:** Setiap bagian konten (seperti Home, Menu, About, Testimonials, Contact) dipisahkan menggunakan tag `<section>` dengan ID yang relevan untuk memfasilitasi navigasi internal.
 * **`<footer>`:** Berisi informasi hak cipta di bagian paling bawah halaman.
 * **Struktur Modal:** Terdapat dua `<div>` di akhir `<body>` dengan ID `memberModal` dan `menuModal`. Keduanya berfungsi sebagai kontainer pop-up yang awalnya disembunyikan dan akan ditampilkan menggunakan JavaScript.
 
-### [cite_start]2. Desain CSS [cite: 40]
+### 2. Desain CSS 
 
-[cite_start]File `style.css` bertanggung jawab atas seluruh aspek visual untuk menciptakan desain yang estetis dan menarik[cite: 33].
+File `style.css` bertanggung jawab atas seluruh aspek visual untuk menciptakan desain yang estetis dan menarik.
 
 * **CSS Variables (`:root`):** Palet warna utama seperti `--bg-main` dan `--coffee-dark` didefinisikan sebagai variabel untuk menjaga konsistensi dan kemudahan dalam modifikasi desain.
 * **Layouting:** Layout utama menggunakan **Flexbox** untuk mengatur elemen seperti navbar, konten hero, dan kartu testimoni, yang mempermudah implementasi desain yang responsif.
 * **Desain Responsif:** Menggunakan **`@media queries`** untuk menyesuaikan tampilan pada berbagai ukuran layar, terutama di bawah 768px. Perubahan signifikan termasuk mengubah navigasi menjadi *hamburger menu* dan menata ulang layout beberapa bagian dari horizontal menjadi vertikal.
-* [cite_start]**Animasi dan Transisi:** Efek visual seperti animasi `fadeUp` pada teks hero, transisi `transform` pada item menu saat di-hover, serta animasi `fadeIn` & `scaleUp` pada modal diimplementasikan untuk memberikan pengalaman pengguna yang lebih dinamis dan modern[cite: 29].
+* **Animasi dan Transisi:** Efek visual seperti animasi `fadeUp` pada teks hero, transisi `transform` pada item menu saat di-hover, serta animasi `fadeIn` & `scaleUp` pada modal diimplementasikan untuk memberikan pengalaman pengguna yang lebih dinamis dan modern.
 
-### [cite_start]3. Fungsionalitas JavaScript [cite: 43]
+### 3. Fungsionalitas JavaScript 
 
 File `Script.js` mengelola semua interaktivitas website. Seluruh kode dibungkus dalam event listener `DOMContentLoaded` untuk memastikan skrip berjalan setelah halaman dimuat sepenuhnya. Implementasi mencakup:
 
-* [cite_start]**Event Handling:** Event `click` digunakan pada tombol menu, item menu, tombol *scroll*, dan tombol tutup modal untuk memicu fungsi tertentu[cite: 27]. Event `keydown` pada `window` mendeteksi penekanan tombol 'Escape' sebagai cara alternatif untuk menutup modal.
-* [cite_start]**DOM Manipulation:** Fungsi `openModal()` dan `openMemberModal()` secara dinamis membuat elemen HTML (`<li>`, `<div>`) berdasarkan data dari *array/object* JavaScript[cite: 28]. Elemen-elemen ini kemudian disisipkan ke dalam DOM untuk menampilkan detail menu dan daftar anggota tim di dalam modal.
-* [cite_start]**Style & Animation:** Fungsi `showCategory()` memanipulasi properti CSS seperti `style.opacity` dan `style.transform` untuk menciptakan animasi transisi yang halus saat beralih antara kategori menu 'Coffee' dan 'Snacks'[cite: 29]. Kelas `.modal-open` ditambahkan ke `<body>` saat modal terbuka untuk menonaktifkan *scrolling* di latar belakang.
+* **Event Handling:** Event `click` digunakan pada tombol menu, item menu, tombol *scroll*, dan tombol tutup modal untuk memicu fungsi tertentu. Event `keydown` pada `window` mendeteksi penekanan tombol 'Escape' sebagai cara alternatif untuk menutup modal.
+* **DOM Manipulation:** Fungsi `openModal()` dan `openMemberModal()` secara dinamis membuat elemen HTML (`<li>`, `<div>`) berdasarkan data dari *array/object* JavaScript. Elemen-elemen ini kemudian disisipkan ke dalam DOM untuk menampilkan detail menu dan daftar anggota tim di dalam modal.
+* **Style & Animation:** Fungsi `showCategory()` memanipulasi properti CSS seperti `style.opacity` dan `style.transform` untuk menciptakan animasi transisi yang halus saat beralih antara kategori menu 'Coffee' dan 'Snacks'. Kelas `.modal-open` ditambahkan ke `<body>` saat modal terbuka untuk menonaktifkan *scrolling* di latar belakang.
 
-### [cite_start]4. Dokumentasi dan SRS [cite: 42]
+### 4. Dokumentasi dan SRS 
 
 * **Dokumentasi Kode:** Komentar telah ditambahkan di dalam file `Script.js` dan `style.css` untuk menjelaskan bagian-bagian kode yang penting, seperti struktur data, fungsi utama, dan blok *styling*, agar mudah dipahami.
 * **SRS (Software Requirements Specification) Sederhana:**
     * **a. Tujuan Proyek:** Tujuan utama proyek adalah merancang dan mengembangkan halaman website *front-end* yang fungsional dan estetis untuk "Brew & Co. Coffee Shop". Website ini bertujuan untuk memberikan informasi menu, profil perusahaan, dan testimoni pelanggan kepada pengunjung.
     * **b. Kebutuhan Fungsional:**
-        * [cite_start]Pengguna dapat melihat navigasi utama (Home, About, Testimonials, Contact)[cite: 21].
+        * Pengguna dapat melihat navigasi utama (Home, About, Testimonials, Contact).
         * Pengguna dapat melihat daftar menu yang terbagi dalam kategori Coffee dan Snacks.
         * Pengguna dapat mengklik sebuah item menu untuk melihat detailnya (gambar, nama, deskripsi) dalam sebuah pop-up (modal).
         * Pengguna dapat mengklik tombol "Anggota Kami" untuk melihat daftar anggota tim pengembang dalam sebuah pop-up.
         * Pengguna dapat menutup jendela pop-up dengan mengklik tombol 'X', area di luar pop-up, atau menekan tombol 'Escape'.
         * Website dapat diakses dengan baik pada perangkat desktop maupun *mobile*.
     * **c. Kebutuhan Non-Fungsional:**
-        * [cite_start]**Desain Estetis:** Tampilan website harus menarik, bersih, dan konsisten dengan tema *coffee shop* modern[cite: 41].
+        * **Desain Estetis:** Tampilan website harus menarik, bersih, dan konsisten dengan tema *coffee shop* modern.
         * **Performa:** Halaman web harus dimuat dengan cepat.
-        * [cite_start]**Keterbacaan:** Teks pada website harus mudah dibaca dengan kontras warna dan ukuran font yang baik[cite: 34].
-        * [cite_start]**Validasi Kode:** Kode HTML dan CSS harus sesuai dengan standar[cite: 36].
+        * **Keterbacaan:** Teks pada website harus mudah dibaca dengan kontras warna dan ukuran font yang baik.
+        * **Validasi Kode:** Kode HTML dan CSS harus sesuai dengan standar.
