@@ -1,6 +1,6 @@
 # Project UTS Pemrograman Web - Website Brew & Co.
 
-[cite_start]Proyek ini merupakan Ujian Tengah Semester (UTS) untuk matakuliah Pemrograman Web (Program Studi: Sarjana Terapan Manajemen Informatika / Semester 3)[cite: 3, 4]. [cite_start]Proyek ini bertujuan untuk membuat halaman website interaktif untuk sebuah *coffee shop* fiktif bernama "Brew & Co." menggunakan HTML, CSS, dan JavaScript[cite: 13]. [cite_start]Hasil akhir proyek di-hosting di server GitHub[cite: 15].
+Proyek ini merupakan Ujian Tengah Semester (UTS) untuk matakuliah Pemrograman Web (Program Studi: Sarjana Terapan Manajemen Informatika / Semester 3). Proyek ini bertujuan untuk membuat halaman website interaktif untuk sebuah *coffee shop* fiktif bernama "Brew & Co." menggunakan HTML, CSS, dan JavaScript. Hasil akhir proyek di-hosting di server GitHub.
 
 ## Anggota Kelompok
 
@@ -12,7 +12,7 @@
 
 ## Alamat Domain (Live Demo)
 
-[cite_start]Website ini telah di-hosting menggunakan GitHub Pages dan dapat diakses melalui tautan berikut[cite: 47]:
+Website ini telah di-hosting menggunakan GitHub Pages dan dapat diakses melalui tautan berikut:
 
 **[https://&lt;WahyuMiwap&gt;.github.io/&lt;UTS-proyek-web-kelompok-5&gt;/tugas%20web.html](https://<WahyuMiwap>.github.io/<UTS-proyek-web-kelompok-5>/tugas%20web.html)**
 
