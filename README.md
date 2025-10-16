@@ -12,9 +12,9 @@ Proyek ini merupakan Ujian Tengah Semester (UTS) untuk matakuliah Pemrograman We
 
 ## Alamat Domain (Live Demo)
 
-Website ini telah di-hosting menggunakan GitHub Pages dan dapat diakses melalui tautan berikut:
+Website ini telah di-hosting dan dapat diakses melalui tautan berikut:
 
-**[https://&lt;WahyuMiwap&gt;.github.io/&lt;UTS-proyek-web-kelompok-5&gt;/tugas%20web.html](https://<WahyuMiwap>.github.io/<UTS-proyek-web-kelompok-5>/tugas%20web.html)**
+**https://kelompok5.2024b.my.id/**
 
 ## Teknologi yang Digunakan
 
